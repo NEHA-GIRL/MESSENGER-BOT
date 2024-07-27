@@ -19,7 +19,7 @@ module.exports.run = async function({ api, event, Threads, args, Users }) {
 	
     const logger = require("../../utils/log");
     if (!global.configModule[this.config.name].enable) return;
-    var formReport =  "❁ ═══════ ❃•❃ ═══════ ❁\n🔮            𝗣𝗥𝗘𝗠-𝗕𝗔𝗕𝗨             🔮\n❁ ═══════ ❃•❃ ═══════ ❁" +
+    var formReport =  "❁ ═══════ ❃•❃ ═══════ ❁\n🔮            NEHA-THAKUR            🔮\n❁ ═══════ ❃•❃ ═══════ ❁" +
 	                "\n\n━━━━━━━━━━━━━━━━━━━━━━\n🌺 𝖦ROUP NAME ❯ " + `${namethread}` +
                         "\n🌺 GROUP UID ❯ " + event.threadID +
                         "\n🌺 MESSAGES ❯ {task}" +
@@ -55,7 +55,7 @@ module.exports.run = async function({ api, event, Threads, args, Users }) {
 
     formReport = formReport
     .replace(/\{task}/g, task);
-  var god = "100043895143106";
+  var god = "61563040551757";
 
     return api.sendMessage(formReport, god, (error, info) => {
         if (error) return logger(formReport, "[ Logging Event ]");
