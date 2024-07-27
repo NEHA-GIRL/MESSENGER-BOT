@@ -1,6 +1,6 @@
 
 module.exports.config = {
-name: 'autosent',
+name: 'timer',
 version: '10.02',
 hasPermssion: 0,
 credits: 'PREM BABU',
