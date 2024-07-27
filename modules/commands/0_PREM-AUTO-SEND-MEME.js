@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "PREM-MEME",
+	name: "CHINTU-MEME",
 	version: "3.3.1",
 	hasPermssion: 1,
 	credits: "PREM BABU",
