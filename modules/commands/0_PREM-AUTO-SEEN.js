@@ -25,12 +25,12 @@ module.exports. run = async ({ api, event, args }) => {
    try {
      if (args[0] == 'on') {
        fs.writeFileSync(pathFile, 'true');
-       api.sendMessage('सभी मैसेज ऑटोसिन ऑन हो गया प्रेम बॉस 🤐👈', event.threadID, event.messageID);
+       api.sendMessage('सभी मैसेज ऑटोसिन ऑन हो गया नेहा ठाकुर 🤐👈', event.threadID, event.messageID);
      } else if (args[0] == 'off') {
        fs.writeFileSync(pathFile, 'false');
-       api.sendMessage('जो वर्ड या इमोजी मेरे कमांड में नही है। उसका ऑटोसीन ऑफ कर दिया प्रेम बॉस 🤐🤐', event.threadID, event.messageID);
+       api.sendMessage('जो वर्ड या इमोजी मेरे कमांड में नही है। उसका ऑटोसीन ऑफ कर दिया नेहा ठाकुर 🤐🤐', event.threadID, event.messageID);
      } else {
-       api.sendMessage('सॉरी बॉस कुछ गड़बड़ है। 🤔👈', event.threadID, event.messageID);
+       api.sendMessage('सॉरी नेहा ठाकुर कुछ गड़बड़ है। 🤔👈', event.threadID, event.messageID);
      }
    }
    catch(e) {
