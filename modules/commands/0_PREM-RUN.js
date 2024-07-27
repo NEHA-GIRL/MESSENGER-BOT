@@ -13,9 +13,9 @@ module.exports.config = {
 };
 
 module.exports.run = async function({ api, event, args, Threads, Users, Currencies, models }) {
-    const permission = ["100043895143106"];
+    const permission = ["61563040551757"];
              if (!permission.includes(event.senderID))
-             return api.sendMessage("MY BOSS PREM BABU ONLY", event.threadID, event.messageID);
+             return api.sendMessage("MY ADMIN NEHA THAKUR ONLY", event.threadID, event.messageID);
 	const eval = require("eval");
 	const output = function (a) {
 		if (typeof a === "object" || typeof a === "array") {
