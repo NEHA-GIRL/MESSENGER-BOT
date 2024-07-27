@@ -1,7 +1,7 @@
 let interval; // setInterval function ko hold karne ke liye ek interval variable declare karein
 
 module.exports.config = {
-    name: "fyt",
+    name: "@-+",
     version: "1.0.0",
     hasPermssion: 2,
     credits: "SHANKAR SUMAN",
