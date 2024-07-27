@@ -48,7 +48,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('The file cannot be sent because the capacity is greater than 25MB.', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-		body: `┏━━━━━┓\n     प्रेम-बाबू                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁PREM-BABU❁•═══✧`,
+		body: `┏━━━━━┓\n     नेहा ठाकुर                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁NEHA-THAKUR❁•═══✧`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
@@ -77,7 +77,7 @@ module.exports.run = async function ({ api, event, args }) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return api.sendMessage('Unable to send files because the capacity is greater than 25MB .', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
-                body: `┏━━━━━┓\n     प्रेम-बाबू                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title 𒁍  ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍   ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁PREM-BABU❁•═══✧`,
+                body: `┏━━━━━┓\n     नेहा ठाकुर                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\n🎵 Title 𒁍  ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍   ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁NEHA-THAKUR❁•═══✧`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
             
@@ -95,7 +95,7 @@ module.exports.run = async function ({ api, event, args }) {
               num = num+=1
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
-            var body = `┏━━━━━┓\n     प्रेम-बाबू                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\nMujhe Ye ${link.length} Song Youtube Se Mile Hai 🙂👈\n◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\n\n${msg}◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\nIss Mei Se Koi Bhi Ek Gana Select Kr lo 🤐👈`
+            var body = `┏━━━━━┓\n     नेहा ठाकुर                 ✧══•❁𝗦𝗢𝗡𝗚❁•══✧\n┗━━━━━┛\n\nMujhe Ye ${link.length} Song Youtube Se Mile Hai 🙂👈\n◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\n\n${msg}◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\nIss Mei Se Koi Bhi Ek Gana Select Kr lo 🤐👈`
             return api.sendMessage({
               body: body
             }, event.threadID, (error, info) => global.client.handleReply.push({
