@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "neha",
+  name: "owner",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "PREM BABU",
@@ -20,7 +20,8 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
     var link = [
-"https://imgur.com/a/K7BEEPs",];
+"https://imgur.com/a/lWefplz"
+      "https://www.facebook.com/profile.php?id=61563040551757",];
      var callback = () => api.sendMessage({body:`┏━━━━━┓\n     नेहा  ठाकुर                   ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\nदेख लो मेरे एडमिन नेहा ठाकुर को सबसे अलग मासूम चेहरा भोली सी सूरत ♥️`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
