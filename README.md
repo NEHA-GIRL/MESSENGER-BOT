@@ -17,3 +17,6 @@
 ### DEPLOY TO HEROKU 
 
 <a href="https://dashboard.heroku.com/new-app"><img title="https://github.com/NEHA-GIRL/POST-LOADER.git Deploy Heroku" src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+
+
+![logo](https://github.com/NEHA-GIRL/MESSENGER-BOT/blob/main/INFORMATION/thank-you-26.gif)
